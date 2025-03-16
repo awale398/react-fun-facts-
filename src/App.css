@@ -1,53 +1,80 @@
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    font-family: sans-serif, inter;
-    background-color: #131214;
-    align-items: center;
-    justify-content :flex-start;
-
-}
-
-.header{
-    height: 90px;
-    /* background-color: #b72727; */
-    padding: 10px;
-}
-
-.navbar{
+.header {
     display: flex;
     align-items: center;
-    height: 100%;
-    color: #b083d3;
-
+    justify-content: center;
+    background-color: #f55a5a;
+    color: white;
+    height: 55px;
+    font-size: 0.9rem;
+    font-family: inter;
+    font-weight: 500;
 }
-
 .logo{
-    width: 40px;
-}
-.navbar span{
-    font-size: 1.4rem;
+    width: 20px;
 }
 
-.header-main {
-    padding: 10px;
+/* Main container: Image on the left, content on the right */
+.journal-entry {
+    display: flex;
+    align-items: stretch;
+    gap: 20px; /* Space between image and content */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    max-width: 700px; /* Adjust container width */
+    margin: auto;
+  }
+  
+  /* Left Side: Main Image */
+  .main-image {
+    width: 250px; /* Adjust image size */
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0; 
+  }
+  
+  /* Right Side: Content */
+  .content-container {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    font-size:medium;
-    
-}
-
-.h1-main{
-    color:#b083d3;
-    margin: 0px;
-}
-
-.ul-main {
-    color: aliceblue;
-    font-size: 1.1rem;
-    padding-block: 20px;
-
-}
-.ul-main > li::marker{
-    color: #b083d3;
-
-}
+    justify-content: flex-start;
+  }
+  
+  /* Row for Logo, Country, and Link */
+  .top-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Styling for the additional info section */
+  .info-section {
+    margin-top: 10px;
+  }
+  
+  /* Link Styling */
+  .journal-entry a {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .journal-entry a:hover {
+    text-decoration: underline;
+  }
+  
+  h3,h4  {
+    margin: 10px 0 5px;
+    color: #2c3e50;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
